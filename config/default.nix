@@ -1,7 +1,7 @@
 {
     clipboard.register = "unnamedplus"; 
     plugins.luasnip.enable = true;
-    plugins.alpha.enable = true;
+    #plugins.alpha.enable = true;
 
     # Debug
     plugins.dap.enable = true;
@@ -23,7 +23,7 @@
     plugins.ts-context-commentstring.enable = true;
     
     plugins.bufferline.enable = true;
-    # plugins.friendly-snippets.enable = true;  
+    plugins.friendly-snippets.enable = true;  
     plugins.navic.enable = true;
     plugins.surround.enable = true;
     plugins.illuminate.enable = true;
@@ -46,11 +46,11 @@
     plugins.lsp.servers.html.enable = true;
     plugins.lsp.servers.jsonls.enable = true;
     plugins.lsp.servers.lua-ls.enable = true;
-    # plugins.lsp.servers.marksman.enable = true;
+    plugins.lsp.servers.marksman.enable = true;
     plugins.lsp.servers.pylsp.enable = true;
     plugins.lsp.servers.tailwindcss.enable = true;
     plugins.lsp.servers.tsserver.enable = true;
-    # plugins.lsp.servers.dockerls.enable = true;
+    plugins.lsp.servers.dockerls.enable = true;
     plugins.lsp.servers.cssls.enable = true;
     plugins.lsp.servers.clangd.enable = true;
     plugins.lsp.servers.bashls.enable = true;
