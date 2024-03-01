@@ -13,6 +13,7 @@
 		 ./fidget.nix
 		 ./lualine.nix
 		 ./telescope.nix
+		 ./extra_plugins.nix
   ];
   enable = true;
   autoCmd = [
@@ -26,4 +27,5 @@
 			command = "lua require('lsp_lines').toggle()";
 		}
   ];
+	extraConfigLuaPre = "vim.wo.relativenumber = true"
 }

@@ -4,6 +4,7 @@
     plugins.neo-tree.filesystem.filteredItems.hideDotfiles = false;
     plugins.neo-tree.filesystem.filteredItems.hideGitignored = false;
     plugins.neo-tree.filesystem.filteredItems.showHiddenCount = false;
+		plugins.lualine.globalstatus = true;
 		plugins.nvim-tree = {
 		git = {
 			enable = true;
