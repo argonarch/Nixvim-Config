@@ -27,5 +27,5 @@
 			command = "lua require('lsp_lines').toggle()";
 		}
   ];
-	extraConfigLuaPre = "vim.wo.relativenumber = true"
+	extraConfigLuaPre = "vim.wo.relativenumber = true";
 }
