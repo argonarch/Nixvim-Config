@@ -15,6 +15,8 @@
         {name = "luasnip";}
         {name = "crates";}
         {name = "buffer";}
+        {name = "dap";}
+        {name = "cmdline";}
       ];
 
       # It's annoying to have to `shift+tab` up to what I want to select, these

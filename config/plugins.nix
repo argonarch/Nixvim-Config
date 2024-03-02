@@ -23,6 +23,7 @@
 		undotree.enable = true;
 		vim-bbye.enable = true;
 		lastplace.enable = true;
+		rest.enable = true;
 	};
 }
 

@@ -27,5 +27,11 @@
 			command = "lua require('lsp_lines').toggle()";
 		}
   ];
-	extraConfigLuaPre = "vim.wo.relativenumber = true";
+	extraConfigLuaPre = ''
+	vim.wo.relativenumber = true
+	local set = vim.opt -- set options
+	set.tabstop = 2
+	set.softtabstop = 2
+	set.shiftwidth = 2
+	'';
 }
