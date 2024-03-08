@@ -40,9 +40,9 @@
     }
     {
 			mode = "n";
-		  key = "<C-n>";
-			action = "<cmd>lua require('nvim-tree.api').tree.toggle()<CR>";
-			options.desc = "Toggle Tree";
+		  key = "<leader>e";
+			action = "<cmd>Neotree toggle<CR>";
+			options.desc = "Toggle Neo Tree";
 			}
 		{
 		  mode = "n";

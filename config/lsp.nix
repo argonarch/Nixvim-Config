@@ -18,6 +18,10 @@
 	  cssls.enable = true;
 	  clangd.enable = true;
 	  bashls.enable = true;
+	  dartls.enable = true;
+	  emmet_ls.enable = true;
+	  eslint.enable = true;
+		typst-lsp.enable = true;
 	};
 	plugins.lsp-lines.enable = true;
 	

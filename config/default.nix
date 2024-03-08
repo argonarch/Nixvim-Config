@@ -17,11 +17,6 @@
   ];
   enable = true;
   autoCmd = [
-    {
-      event = "FileType";
-      pattern = "nix";
-      command = "setlocal tabstop=2 shiftwidth=2 softtabstop=2";
-    }
 		{
 			event = "VimEnter";
 			command = "lua require('lsp_lines').toggle()";
@@ -33,5 +28,9 @@
 	set.tabstop = 2
 	set.softtabstop = 2
 	set.shiftwidth = 2
+	vim.diagnostic.config({
+		virtual_text = false,
+		virtual_lines = true,
+	})
 	'';
 }

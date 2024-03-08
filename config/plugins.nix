@@ -24,6 +24,7 @@
 		vim-bbye.enable = true;
 		lastplace.enable = true;
 		rest.enable = true;
+		emmet.enable = true;
 	};
 }
 
