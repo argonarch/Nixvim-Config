@@ -1,5 +1,6 @@
 {
   plugins.lsp.enable = true;
+	plugins.lsp-format.enable = true;
   plugins.lsp.servers = {
 		astro.enable = true;
 		rust-analyzer.enable = true;
@@ -12,6 +13,8 @@
 		lua-ls.enable = true;
 	  marksman.enable = true;
 		pylsp.enable = true;
+		pylyzer.enable = true;
+		pyright.enable = true;
 	  tailwindcss.enable = true;
 	  tsserver.enable = true;
 	  dockerls.enable = true;

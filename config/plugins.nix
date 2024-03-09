@@ -10,7 +10,6 @@
     nvim-colorizer.enable = true;    
     bufferline.enable = true;
     friendly-snippets.enable = true;  
-    navic.enable = true;
     surround.enable = true;
     illuminate.enable = true;
     project-nvim.enable = true;
@@ -25,6 +24,8 @@
 		lastplace.enable = true;
 		rest.enable = true;
 		emmet.enable = true;
+		auto-save.enable = true;
+		neogit.enable = true;
 	};
 }
 
