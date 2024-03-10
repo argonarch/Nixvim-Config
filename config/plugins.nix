@@ -27,5 +27,6 @@
 		auto-save.enable = true;
 		neogit.enable = true;
 	};
+	plugins.notify.backgroundColour = "#000000";
 }
 

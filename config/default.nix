@@ -24,6 +24,7 @@
   ];
 	extraConfigLuaPre = ''
 	vim.wo.relativenumber = true
+	vim.wo.number = true
 	local set = vim.opt -- set options
 	set.tabstop = 2
 	set.softtabstop = 2
