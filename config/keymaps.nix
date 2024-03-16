@@ -1,9 +1,9 @@
 {
   globals = {
-      mapleader = " ";
-      loaded_ruby_provider = 0;
-      loaded_perl_provider = 0;
-      loaded_python_provider = 0;
+    mapleader = " ";
+    loaded_ruby_provider = 0;
+    loaded_perl_provider = 0;
+    loaded_python_provider = 0;
   };
   keymaps = [
     {
@@ -20,33 +20,38 @@
     }
     {
       mode = "n";
-      key = "<C-h>";
-      action = "<C-w>h";
-    }
-    {
-      mode = "n";
-      key = "<C-j>";
-      action = "<C-w>j";
-    }
-    {
-      mode = "n";
-      key = "<C-k>";
-      action = "<C-w>k";
-    }
-    {
-      mode = "n";
-      key = "<C-l>";
-      action = "<C-w>l";
-    }
-    {
-			mode = "n";
-		  key = "<leader>e";
-			action = "<cmd>Neotree toggle<CR>";
-			options.desc = "Toggle Neo Tree";
-		}
-		
+      key = "<C-Up>";
+      action = "<C-\\><C-N><C-w>k";
 
-		{
+    }
+    {
+      mode = "n";
+      key = "<C-Down>";
+      action = "<C-\\><C-N><C-w>j";
+
+    }
+    {
+      mode = "n";
+      key = "C-Left";
+      action = "<C-\\><C-N><C-w>h";
+
+    }
+    {
+      mode = "n";
+      key = "<C-Right>";
+      action = "<C-\\><C-N><C-w>l";
+
+    }
+
+
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = "<cmd>Neotree toggle<CR>";
+      options.desc = "Toggle Neo Tree";
+    }
+
+    {
       mode = "n";
       key = "<leader>la";
       options.desc = "Lsp Code Actions";
@@ -82,12 +87,12 @@
       options.desc = "Lsp Goto Definition";
       action = "<cmd>Lspsaga goto_definition<CR>";
     }
-		{
+    {
       mode = "n";
       key = "q";
       action = "<Nop>";
     }
-		{
+    {
       mode = "n";
       key = "<S-right>";
       action = "<Cmd>BufferLineCycleNext<CR>";
@@ -99,7 +104,7 @@
       action = "<Cmd>BufferLineCyclePrev<CR>";
       options.desc = "Previous Buffer";
     }
-		{
+    {
       mode = "n";
       key = "<leader>ff";
       action = "<cmd>lua require('telescope.builtin').find_files({hidden = true})<CR>";
@@ -141,13 +146,13 @@
       action = "<cmd>lua require('telescope.builtin').marks()<CR>";
       options.desc = "Find Marks";
     }
-		{
+    {
       mode = "n";
       key = "<leader>tc";
       action = "<cmd>TSContextToggle<CR>";
       options.desc = "Toggle treesitter context";
     }
-		{
+    {
       mode = "n";
       key = "<leader>u";
       action = "<cmd>UndotreeToggle<CR>";
@@ -209,5 +214,5 @@
       action = "<cmd>lua require('gitsigns').undo_stage_hunk()<CR>";
       options.desc = "Git Hunk Undo Stage";
     }
-    ];
+  ];
 }
