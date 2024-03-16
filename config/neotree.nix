@@ -10,6 +10,7 @@
 			enable = true;
       ignore = false;
     };
+		disableNetrw = true;
     renderer.indentWidth = 1;
     diagnostics.enable = true;
     view.float.enable = true;

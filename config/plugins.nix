@@ -13,8 +13,7 @@
     surround.enable = true;
     illuminate.enable = true;
     project-nvim.enable = true;
-    barbecue.enable = true;
-    better-escape.enable = true;
+		better-escape.enable = true;
     comment-nvim.enable = true; 
     nvim-autopairs.enable = true;
     which-key.enable = true;
@@ -24,7 +23,6 @@
 		lastplace.enable = true;
 		rest.enable = true;
 		emmet.enable = true;
-		auto-save.enable = true;
 		neogit.enable = true;
 	};
 	plugins.notify.backgroundColour = "#000000";

@@ -43,13 +43,9 @@
 		  key = "<leader>e";
 			action = "<cmd>Neotree toggle<CR>";
 			options.desc = "Toggle Neo Tree";
-			}
-		{
-		  mode = "n";
-			key = "<leader>ll";
-			action = "<cmd>lua require('lsp_lines').toggle()<CR>";
-			options.desc = "Toggle Lines";
 		}
+		
+
 		{
       mode = "n";
       key = "<leader>la";
