@@ -1,6 +1,8 @@
 {
   plugins.lualine = {
     enable = true;
+    extensions = [ "fzf" ];
+		globalstatus = true;
     componentSeparators = {
       left = "";
       right = "";

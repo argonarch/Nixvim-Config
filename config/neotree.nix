@@ -1,18 +1,28 @@
 {
-  plugins.neo-tree.enable = true;
   plugins.neo-tree.filesystem.filteredItems.hideDotfiles = false;
   plugins.neo-tree.filesystem.filteredItems.hideGitignored = false;
   plugins.neo-tree.filesystem.filteredItems.showHiddenCount = false;
-  plugins.lualine.globalstatus = true;
-  plugins.nvim-tree = {
-    git = {
-      enable = true;
-      ignore = false;
+  plugins.neo-tree = {
+    enable = true;
+    enableDiagnostics = true;
+    enableGitStatus = true;
+    enableModifiedMarkers = true;
+    enableRefreshOnWrite = true;
+    closeIfLastWindow = true;
+    popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
+    buffers = {
+      bindToCwd = false;
+      followCurrentFile = {
+        enabled = true;
+      };
     };
-    disableNetrw = true;
-    renderer.indentWidth = 1;
-    diagnostics.enable = true;
-    view.float.enable = true;
-    updateFocusedFile.enable = true;
+    window = {
+      width = 40;
+      height = 15;
+      autoExpandWidth = false;
+      mappings = {
+        "<space>" = "none";
+      };
+    };
   };
 }

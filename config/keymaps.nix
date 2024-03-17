@@ -18,31 +18,6 @@
       action = "<cmd>w<CR>";
       options.desc = "Save Current Buffer";
     }
-    {
-      mode = "n";
-      key = "<C-Up>";
-      action = "<C-\\><C-N><C-w>k";
-
-    }
-    {
-      mode = "n";
-      key = "<C-Down>";
-      action = "<C-\\><C-N><C-w>j";
-
-    }
-    {
-      mode = "n";
-      key = "C-Left";
-      action = "<C-\\><C-N><C-w>h";
-
-    }
-    {
-      mode = "n";
-      key = "<C-Right>";
-      action = "<C-\\><C-N><C-w>l";
-
-    }
-
 
     {
       mode = "n";
@@ -53,57 +28,10 @@
 
     {
       mode = "n";
-      key = "<leader>la";
-      options.desc = "Lsp Code Actions";
-      action = "<cmd>Lspsaga code_action<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>lf";
-      options.desc = "Lsp Find";
-      action = "<cmd>Lspsaga finder<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>lh";
-      options.desc = "Lsp Hover";
-      action = "<cmd>Lspsaga hover_doc<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>lr";
-      options.desc = "Lsp Rename";
-      action = "<cmd>Lspsaga rename<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>lp";
-      options.desc = "Lsp Show Definition";
-      action = "<cmd>Lspsaga peek_definition<CR>";
-    }
-    {
-      mode = "n";
-      key = "<leader>ld";
-      options.desc = "Lsp Goto Definition";
-      action = "<cmd>Lspsaga goto_definition<CR>";
-    }
-    {
-      mode = "n";
       key = "q";
       action = "<Nop>";
     }
-    {
-      mode = "n";
-      key = "<S-right>";
-      action = "<Cmd>BufferLineCycleNext<CR>";
-      options.desc = "Next Buffer";
-    }
-    {
-      mode = "n";
-      key = "<S-left>";
-      action = "<Cmd>BufferLineCyclePrev<CR>";
-      options.desc = "Previous Buffer";
-    }
+
     {
       mode = "n";
       key = "<leader>ff";
@@ -111,43 +39,7 @@
       options.desc = "Find Files";
     }
     {
-      mode = "n";
-      key = "<leader>fg";
-      action = "<cmd>lua require('telescope.builtin').live_grep({hidden = true})<CR>";
-      options.desc = "Grep Files";
-    }
-    {
-      mode = "n";
-      key = "<leader>fb";
-      action = "<cmd>lua require('telescope.builtin').buffers()<CR>";
-      options.desc = "Find Buffer";
-    }
-    {
-      mode = "n";
-      key = "<leader>fh";
-      action = "<cmd>lua require('telescope.builtin').help_tags()<CR>";
-      options.desc = "Find Help";
-    }
-    {
-      mode = "n";
-      key = "<leader>fd";
-      action = "<cmd>lua require('telescope.builtin').diagnostics()<CR>";
-      options.desc = "Find Diagnostics";
-    }
-    {
-      mode = "n";
-      key = "<leader>ft";
-      action = "<cmd>lua require('telescope.builtin').treesitter()<CR>";
-      options.desc = "Find Treesitter";
-    }
-    {
-      mode = "n";
-      key = "<leader>fm";
-      action = "<cmd>lua require('telescope.builtin').marks()<CR>";
-      options.desc = "Find Marks";
-    }
-    {
-      mode = "n";
+    mode = "n";
       key = "<leader>tc";
       action = "<cmd>TSContextToggle<CR>";
       options.desc = "Toggle treesitter context";
@@ -163,6 +55,108 @@
       key = "<leader>b";
       action = "<cmd>Bdelete<CR>";
       options.desc = "Close Buffer";
+    }
+
+		# Tabs
+    {
+      mode = "n";
+      key = "<leader><tab><tab>";
+      action = "<cmd>tabnew<cr>";
+      options = {
+        silent = true;
+        desc = "New Tab";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader><tab>d";
+      action = "<cmd>tabclose<cr>";
+      options = {
+        silent = true;
+        desc = "Close tab";
+      };
+    }
+
+		# Windows
+    {
+      mode = "n";
+      key = "<leader>ww";
+      action = "<C-W>p";
+      options = {
+        silent = true;
+        desc = "Other window";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>wd";
+      action = "<C-W>c";
+      options = {
+        silent = true;
+        desc = "Delete window";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>w-";
+      action = "<C-W>s";
+      options = {
+        silent = true;
+        desc = "Split window below";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>w|";
+      action = "<C-W>v";
+      options = {
+        silent = true;
+        desc = "Split window right";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-h>";
+      action = "<C-W>h";
+      options = {
+        silent = true;
+        desc = "Move to window left";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-l>";
+      action = "<C-W>l";
+      options = {
+        silent = true;
+        desc = "Move to window right";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-k>";
+      action = "<C-W>k";
+      options = {
+        silent = true;
+        desc = "Move to window over";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-j>";
+      action = "<C-W>j";
+      options = {
+        silent = true;
+        desc = "Move to window bellow";
+      };
     }
 
 

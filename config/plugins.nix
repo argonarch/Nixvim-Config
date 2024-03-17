@@ -3,17 +3,14 @@
     luasnip.enable = true;
     dap.enable = true;
     dap.extensions.dap-ui.enable = true;
-    none-ls.enable = true;
     gitsigns.enable = true;
     lspkind.enable = true;
     notify.enable = true;
     nvim-colorizer.enable = true;
-    bufferline.enable = true;
     friendly-snippets.enable = true;
     surround.enable = true;
     illuminate.enable = true;
     project-nvim.enable = true;
-    better-escape.enable = true;
     comment-nvim.enable = true;
     nvim-autopairs.enable = true;
     which-key.enable = true;
@@ -25,6 +22,7 @@
     emmet.enable = true;
     neogit.enable = true;
     neorg.enable = true;
+    none-ls.enable = true;
   };
   plugins.notify.backgroundColour = "#000000";
 }

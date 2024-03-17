@@ -1,13 +1,18 @@
 {
-  plugins.cmp-buffer.enable = true;
-  plugins.cmp-path.enable = true;
-  plugins.cmp-dap.enable = true;
-  plugins.cmp-nvim-lsp.enable = true;
-  plugins.cmp_luasnip.enable = true;
-  plugins.cmp-cmdline.enable = true;
+
   plugins = {
+    cmp-buffer.enable = true;
+    cmp-path.enable = true;
+    cmp-dap.enable = true;
+    cmp-nvim-lsp.enable = true;
+    cmp-cmdline.enable = true;
+    cmp-emoji.enable = true;
+    cmp_luasnip.enable = true;
+    cmp-git.enable = true;
+
     cmp = {
       enable = true;
+      autoEnableSources = true;
       settings = {
         sources = [
           { name = "path"; }
@@ -16,20 +21,35 @@
           { name = "buffer"; }
           { name = "dap"; }
           { name = "cmdline"; }
+          { name = "emoji"; }
+          { name = "git"; }
         ];
-        mapping =
-          {
-            "<C-Space>" = "cmp.mapping.complete()";
-            "<C-d>" = "cmp.mapping.scroll_docs(-4)";
-            "<C-e>" = "cmp.mapping.close()";
-            "<C-f>" = "cmp.mapping.scroll_docs(4)";
-            "<CR>" = "cmp.mapping.confirm({ select = true })";
-            "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-            "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+        mapping = {
+          "<C-Space>" = "cmp.mapping.complete()";
+          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-e>" = "cmp.mapping.close()";
+          "<C-f>" = "cmp.mapping.scroll_docs(4)";
+          "<CR>" = "cmp.mapping.confirm({ select = true })";
+          "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<S-CR>" =
+            "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
+        };
+        snippet = {
+          expand = "luasnip";
+        };
+        formatting = {
+          fields = [ "kind" "abbr" "menu" ];
+          expandableIndicator = true;
+        };
+        window = {
+          completion = {
+            border = "rounded";
+            winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None";
           };
-        snippet.expand = "luasnip";
+          documentation = { border = "rounded"; };
+        };
       };
-
     };
   };
 }
