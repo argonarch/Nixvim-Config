@@ -6,5 +6,6 @@
     ./conform.nix
     ./lspsaga.nix
     ./bufferline.nix
+    ./trouble.nix
   ];
 }

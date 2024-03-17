@@ -22,7 +22,6 @@
     emmet.enable = true;
     neogit.enable = true;
     neorg.enable = true;
-    none-ls.enable = true;
   };
   plugins.notify.backgroundColour = "#000000";
 }
