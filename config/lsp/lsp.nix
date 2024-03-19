@@ -1,5 +1,7 @@
 {
   plugins.lsp.enable = true;
+  plugins.lsp-format.enable = true;
+  plugins.lspkind.enable = true;
   plugins.lsp.servers = {
     astro.enable = true;
     rust-analyzer = {
@@ -10,17 +12,13 @@
         checkOnSave = true;
       };
     };
-    nixd = {
-      enable = true;
-      settings.formatting.command = "nixpkgs-fmt";
-    };
+    nixd.enable = true;
     html.enable = true;
     jsonls.enable = true;
     lua-ls.enable = true;
     marksman.enable = true;
-    pyright = { enable = true; };
+    pyright.enable = true;
     tailwindcss.enable = true;
-    tsserver.enable = true;
     dockerls.enable = true;
     cssls.enable = true;
     ccls.enable = true;
@@ -29,9 +27,8 @@
     emmet_ls.enable = true;
     eslint.enable = true;
     typst-lsp.enable = true;
-    ruff-lsp.enable = true;
+    gdscript.enable = true;
   };
-  plugins.lsp-format.enable = true;
   plugins.luasnip = {
     enable = true;
     extraConfig = {

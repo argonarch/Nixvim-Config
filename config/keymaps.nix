@@ -1,9 +1,6 @@
 {
   globals = {
     mapleader = " ";
-    loaded_ruby_provider = 0;
-    loaded_perl_provider = 0;
-    loaded_python_provider = 0;
   };
   keymaps = [
     {
@@ -12,6 +9,7 @@
       action = "<cmd>qa<CR>";
       options.desc = "Quit NeoVim";
     }
+
     {
       mode = "n";
       key = "<leader>w";
@@ -28,28 +26,11 @@
 
     {
       mode = "n";
-      key = "q";
-      action = "<Nop>";
-    }
-
-    {
-      mode = "n";
-      key = "<leader>ff";
-      action = "<cmd>lua require('telescope.builtin').find_files({hidden = true})<CR>";
-      options.desc = "Find Files";
-    }
-    {
-    mode = "n";
-      key = "<leader>tc";
-      action = "<cmd>TSContextToggle<CR>";
-      options.desc = "Toggle treesitter context";
-    }
-    {
-      mode = "n";
       key = "<leader>u";
       action = "<cmd>UndotreeToggle<CR>";
       options.desc = "Toggle Undotree";
     }
+
     {
       mode = "n";
       key = "<leader>b";
@@ -57,7 +38,14 @@
       options.desc = "Close Buffer";
     }
 
-		# Tabs
+    {
+      mode = "n";
+      key = "r";
+      action = ":red<CR>";
+      options.desc = "Redo";
+    }
+
+    # Tabs
     {
       mode = "n";
       key = "<leader><tab><tab>";
@@ -78,7 +66,7 @@
       };
     }
 
-		# Windows
+    # Windows
     {
       mode = "n";
       key = "<leader>ww";
@@ -121,7 +109,7 @@
 
     {
       mode = "n";
-      key = "<C-h>";
+      key = "<C-Left>";
       action = "<C-W>h";
       options = {
         silent = true;
@@ -131,7 +119,7 @@
 
     {
       mode = "n";
-      key = "<C-l>";
+      key = "<C-Right>";
       action = "<C-W>l";
       options = {
         silent = true;
@@ -141,7 +129,7 @@
 
     {
       mode = "n";
-      key = "<C-k>";
+      key = "<C-Up>";
       action = "<C-W>k";
       options = {
         silent = true;
@@ -151,62 +139,12 @@
 
     {
       mode = "n";
-      key = "<C-j>";
+      key = "<C-Down>";
       action = "<C-W>j";
       options = {
         silent = true;
         desc = "Move to window bellow";
       };
-    }
-
-
-    {
-      mode = "n";
-      key = "<leader>gd";
-      action = "<cmd>lua require('gitsigns').diffthis()<CR>";
-      options.desc = "Git Diff";
-    }
-    {
-      mode = "n";
-      key = "<leader>gr";
-      action = "<cmd>lua require('gitsigns').refresh()<CR>";
-      options.desc = "Git Refresh";
-    }
-    {
-      mode = "n";
-      key = "<leader>gb";
-      action = "<cmd>lua require('gitsigns').blame_line()<CR>";
-      options.desc = "Git Blame";
-    }
-    {
-      mode = "n";
-      key = "<leader>ghv";
-      action = "<cmd>lua require('gitsigns').select_hunk()<CR>";
-      options.desc = "Git Hunk Visual Select";
-    }
-    {
-      mode = "n";
-      key = "<leader>ghp";
-      action = "<cmd>lua require('gitsigns').preview_hunk()<CR>";
-      options.desc = "Git Hunk Preview";
-    }
-    {
-      mode = "n";
-      key = "<leader>ghr";
-      action = "<cmd>lua require('gitsigns').reset_hunk()<CR>";
-      options.desc = "Git Hunk Reset";
-    }
-    {
-      mode = "n";
-      key = "<leader>ghs";
-      action = "<cmd>lua require('gitsigns').stage_hunk()<CR>";
-      options.desc = "Git Hunk Stage";
-    }
-    {
-      mode = "n";
-      key = "<leader>ghu";
-      action = "<cmd>lua require('gitsigns').undo_stage_hunk()<CR>";
-      options.desc = "Git Hunk Undo Stage";
     }
   ];
 }

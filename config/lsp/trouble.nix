@@ -1,7 +1,9 @@
 {
   plugins.trouble = {
     enable = true;
-    autoClose = true;
+    settings = {
+      auto_close = true;
+    };
   };
   keymaps = [
     {

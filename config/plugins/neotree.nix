@@ -1,7 +1,4 @@
 {
-  plugins.neo-tree.filesystem.filteredItems.hideDotfiles = false;
-  plugins.neo-tree.filesystem.filteredItems.hideGitignored = false;
-  plugins.neo-tree.filesystem.filteredItems.showHiddenCount = false;
   plugins.neo-tree = {
     enable = true;
     enableDiagnostics = true;
@@ -22,6 +19,14 @@
       autoExpandWidth = false;
       mappings = {
         "<space>" = "none";
+      };
+    };
+    filesystem = {
+      hijackNetrwBehavior = "open_default";
+      filteredItems = {
+        hideDotfiles = false;
+        hideGitignored = false;
+        showHiddenCount = false;
       };
     };
   };

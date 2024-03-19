@@ -47,5 +47,11 @@
       action = "<cmd>lua require('telescope.builtin').marks()<CR>";
       options.desc = "Find Marks";
     }
+    {
+      mode = "n";
+      key = "<leader>ff";
+      action = "<cmd>lua require('telescope.builtin').find_files({hidden = true})<CR>";
+      options.desc = "Find Files";
+    }
   ];
 }

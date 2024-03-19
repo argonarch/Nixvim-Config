@@ -1,6 +1,6 @@
 {
-
   plugins = {
+    luasnip.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;
     cmp-dap.enable = true;
@@ -15,14 +15,14 @@
       autoEnableSources = true;
       settings = {
         sources = [
-          { name = "path"; }
-          { name = "nvim_lsp"; }
-          { name = "luasnip"; }
-          { name = "buffer"; }
-          { name = "dap"; }
-          { name = "cmdline"; }
-          { name = "emoji"; }
-          { name = "git"; }
+          {name = "path";}
+          {name = "nvim_lsp";}
+          {name = "luasnip";}
+          {name = "buffer";}
+          {name = "dap";}
+          {name = "cmdline";}
+          {name = "emoji";}
+          {name = "git";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
@@ -32,14 +32,13 @@
           "<CR>" = "cmp.mapping.confirm({ select = true })";
           "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
           "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-          "<S-CR>" =
-            "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
+          "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
         };
         snippet = {
           expand = "luasnip";
         };
         formatting = {
-          fields = [ "kind" "abbr" "menu" ];
+          fields = ["kind" "abbr" "menu"];
           expandableIndicator = true;
         };
         window = {
@@ -47,7 +46,7 @@
             border = "rounded";
             winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None";
           };
-          documentation = { border = "rounded"; };
+          documentation = {border = "rounded";};
         };
       };
     };

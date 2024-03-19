@@ -1,5 +1,6 @@
 {
   config = {
+    enable = true;
     options = {
       # Enable relative line numbers
       number = true;
@@ -42,7 +43,7 @@
       updatetime = 50; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
-      completeopt = [ "menuone" "noselect" "noinsert" ]; # mostly just for cmp
+      completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
 
       # Enable persistent undo history
       swapfile = false;
@@ -84,6 +85,11 @@
 
       # We don't need to see things like INSERT anymore
       showmode = false;
+      spell = true;
+    };
+    clipboard = {
+      register = "unnamedplus";
+      providers.wl-copy.enable = true;
     };
   };
 }

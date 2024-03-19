@@ -1,13 +1,15 @@
 {
+  imports = [
+    ./alpha.nix
+    ./bufferline.nix
+    ./lualine.nix
+    ./neotree.nix
+    ./telescope.nix
+  ];
   plugins = {
-    luasnip.enable = true;
     dap.enable = true;
     dap.extensions.dap-ui.enable = true;
-    gitsigns.enable = true;
-    lspkind.enable = true;
-    notify.enable = true;
     nvim-colorizer.enable = true;
-    friendly-snippets.enable = true;
     surround.enable = true;
     illuminate.enable = true;
     project-nvim.enable = true;
@@ -19,10 +21,10 @@
     vim-bbye.enable = true;
     lastplace.enable = true;
     rest.enable = true;
-    emmet.enable = true;
-    neogit.enable = true;
-    neorg.enable = true;
-  };
-  plugins.notify.backgroundColour = "#000000";
-}
 
+    notify = {
+      enable = true;
+      backgroundColour = "#000000";
+    };
+  };
+}
