@@ -2,8 +2,6 @@
   imports = [
     ./cmp.nix
     ./none_ls.nix
+    ./luasnip.nix
   ];
-  plugins = {
-    friendly-snippets.enable = true;
-  };
 }

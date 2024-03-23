@@ -1,6 +1,5 @@
 {
   plugins = {
-    luasnip.enable = true;
     cmp-buffer.enable = true;
     cmp-path.enable = true;
     cmp-dap.enable = true;

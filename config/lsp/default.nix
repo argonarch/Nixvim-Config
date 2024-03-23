@@ -9,6 +9,5 @@
   ];
   plugins = {
     emmet.enable = true;
-    neorg.enable = true;
   };
 }
