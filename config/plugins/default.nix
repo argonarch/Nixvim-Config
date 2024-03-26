@@ -13,11 +13,12 @@
     surround.enable = true;
     illuminate.enable = true;
     project-nvim.enable = true;
-    comment-nvim.enable = true;
+    comment.enable = true;
     nvim-autopairs.enable = true;
     which-key.enable = true;
     indent-blankline.enable = true;
     undotree.enable = true;
+    markdown-preview.enable = true;
     vim-bbye.enable = true;
     lastplace.enable = true;
     rest.enable = true;

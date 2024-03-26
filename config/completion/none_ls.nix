@@ -12,6 +12,9 @@
     yamlfmt.enable = true;
     black.enable = true;
     alejandra.enable = true;
+    gdformat.enable = true;
+    dart_format.enable = true;
+    typstfmt.enable = true;
   };
   plugins.none-ls.sources.diagnostics.yamllint.enable = true;
 }
