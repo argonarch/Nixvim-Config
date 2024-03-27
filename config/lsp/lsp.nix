@@ -14,7 +14,6 @@
     };
     nixd.enable = true;
     html.enable = true;
-    jsonls.enable = true;
     lua-ls.enable = true;
     marksman.enable = true;
     pyright.enable = true;
@@ -25,7 +24,7 @@
     bashls.enable = true;
     dartls.enable = true;
     emmet_ls.enable = true;
-    eslint.enable = true;
+    biome.enable = true;
     typst-lsp.enable = true;
     gdscript.enable = true;
   };

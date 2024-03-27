@@ -5,8 +5,6 @@
     updateInInsert = false;
   };
   plugins.none-ls.sources.formatting = {
-    prettierd.enable = true;
-    prettier.enable = true;
     google_java_format.enable = true;
     stylua.enable = true;
     yamlfmt.enable = true;
@@ -15,6 +13,7 @@
     gdformat.enable = true;
     dart_format.enable = true;
     typstfmt.enable = true;
+    biome.enable = true;
   };
   plugins.none-ls.sources.diagnostics.yamllint.enable = true;
 }
