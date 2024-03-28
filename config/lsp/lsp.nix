@@ -6,8 +6,8 @@
     astro.enable = true;
     rust-analyzer = {
       enable = true;
-      installCargo = false;
-      installRustc = false;
+      installCargo = true;
+      installRustc = true;
       settings = {
         checkOnSave = true;
       };
