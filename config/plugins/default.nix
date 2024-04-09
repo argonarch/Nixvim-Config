@@ -18,7 +18,6 @@
     indent-blankline.enable = true;
     undotree.enable = true;
     markdown-preview.enable = true;
-    vim-bbye.enable = true;
     lastplace.enable = true;
     rest.enable = true;
 

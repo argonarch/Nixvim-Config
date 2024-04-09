@@ -7,6 +7,11 @@
   keymaps = [
     {
       mode = "n";
+      key = "<leader>g";
+      action = "Git Actions";
+    }
+    {
+      mode = "n";
       key = "<leader>gd";
       action = "<cmd>lua require('gitsigns').diffthis()<CR>";
       options.desc = "Git Diff";

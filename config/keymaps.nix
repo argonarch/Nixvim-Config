@@ -12,7 +12,7 @@
     {
       mode = "n";
       key = "<leader>k";
-      action = "<cmd>red<CR>";
+      action = "<cmd>w<CR>";
       options.desc = "Save NeoVim";
     }
     {
@@ -46,6 +46,11 @@
     # Tabs
     {
       mode = "n";
+      key = "<leader><tab>";
+      action = "Tabs";
+    }
+    {
+      mode = "n";
       key = "<leader><tab><tab>";
       action = "<cmd>tabnew<cr>";
       options = {
@@ -65,6 +70,11 @@
     }
 
     # Windows
+    {
+      mode = "n";
+      key = "<leader>w";
+      action = "Window Actions";
+    }
     {
       mode = "n";
       key = "<leader>ww";

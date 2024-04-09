@@ -19,6 +19,11 @@
     }
     {
       mode = "n";
+      key = "<leader>f";
+      action = "Finders";
+    }
+    {
+      mode = "n";
       key = "<leader>fb";
       action = "<cmd>lua require('telescope.builtin').buffers()<CR>";
       options.desc = "Find Buffer";

@@ -132,7 +132,11 @@
         silent = true;
       };
     }
-
+    {
+      mode = "n";
+      key = "<leader>c";
+      action = "LSP-Saga Actions";
+    }
     {
       mode = "n";
       key = "<leader>cr";
