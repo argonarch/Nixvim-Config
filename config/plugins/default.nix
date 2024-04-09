@@ -8,7 +8,6 @@
   ];
   plugins = {
     dap.enable = true;
-    dap.extensions.dap-ui.enable = true;
     nvim-colorizer.enable = true;
     surround.enable = true;
     illuminate.enable = true;

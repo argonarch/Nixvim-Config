@@ -9,14 +9,12 @@
       action = "<cmd>qa<CR>";
       options.desc = "Quit NeoVim";
     }
-
     {
       mode = "n";
-      key = "<leader>w";
-      action = "<cmd>w<CR>";
-      options.desc = "Save Current Buffer";
+      key = "<leader>k";
+      action = "<cmd>red<CR>";
+      options.desc = "Save NeoVim";
     }
-
     {
       mode = "n";
       key = "<leader>e";

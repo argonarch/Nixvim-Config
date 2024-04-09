@@ -1,7 +1,7 @@
 {
   config = {
     enable = true;
-    options = {
+    opts = {
       # Enable relative line numbers
       number = true;
       relativenumber = true;
@@ -91,5 +91,6 @@
       register = "unnamedplus";
       providers.wl-copy.enable = true;
     };
+    extraConfigLuaPre = ''vim.g.neovide_transparency = 0.6'';
   };
 }
