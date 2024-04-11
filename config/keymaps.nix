@@ -68,7 +68,12 @@
         desc = "Close tab";
       };
     }
-
+    {
+      mode = "n";
+      key = "<leader>l";
+      action = "<cmd>lua require('lsp_lines').toggle()<CR>";
+      options.desc = "Toggle Lines";
+    }
     # Windows
     {
       mode = "n";

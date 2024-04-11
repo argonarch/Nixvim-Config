@@ -5,6 +5,7 @@
     ./lualine.nix
     ./neotree.nix
     ./telescope.nix
+    ./toggleterm.nix
   ];
   plugins = {
     dap.enable = true;
