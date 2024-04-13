@@ -92,7 +92,6 @@
       providers.wl-copy.enable = true;
     };
     extraConfigLuaPre = ''
-      vim.g.neovide_transparency = 0.6
       vim.diagnostic.config({
       		virtual_text = false,
       		virtual_lines = true,

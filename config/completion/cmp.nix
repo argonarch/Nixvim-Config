@@ -34,7 +34,7 @@
           "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
         };
         snippet = {
-          expand = "luasnip";
+          expand = "function(args) require('luasnip').lsp_expand(args.body) end";
         };
         formatting = {
           fields = ["kind" "abbr" "menu"];
