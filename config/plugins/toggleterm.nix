@@ -1,8 +1,10 @@
 {
   plugins.toggleterm = {
     enable = true;
-    shell = "fish";
-    direction = "float";
-    openMapping = "<C-n>";
+    settings = {
+      shell = "fish";
+      direction = "float";
+      open_mapping = "[[<C-n>]]";
+    };
   };
 }

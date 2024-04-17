@@ -17,7 +17,6 @@
     barbar.enable = true;
     nvim-autopairs.enable = true;
     which-key.enable = true;
-    which-key.showHelp = false;
     indent-blankline.enable = true;
     undotree.enable = true;
     markdown-preview.enable = true;
