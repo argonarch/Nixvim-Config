@@ -17,11 +17,22 @@
     }
     {
       mode = "n";
+      key = "<leader>t";
+      action = "<cmd>FormatToggle<CR>";
+      options.desc = "Format Toogle";
+    }
+    {
+      mode = "n";
       key = "<leader>e";
       action = "<cmd>Neotree toggle<CR>";
       options.desc = "Toggle Neo Tree";
     }
-
+    {
+      mode = "n";
+      key = "<leader>r";
+      action = "<cmd>LspRestart<CR>";
+      options.desc = "Lsp Restart";
+    }
     {
       mode = "n";
       key = "<leader>u";
@@ -39,7 +50,7 @@
     {
       mode = "n";
       key = "r";
-      action = ":red<CR>";
+      action = "<cmd>red<CR>";
       options.desc = "Redo";
     }
 

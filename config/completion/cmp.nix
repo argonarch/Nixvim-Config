@@ -4,10 +4,7 @@
     cmp-path.enable = true;
     cmp-dap.enable = true;
     cmp-nvim-lsp.enable = true;
-    cmp-cmdline.enable = true;
-    cmp-emoji.enable = true;
     cmp_luasnip.enable = true;
-    cmp-git.enable = true;
 
     cmp = {
       enable = true;
@@ -19,9 +16,6 @@
           {name = "luasnip";}
           {name = "buffer";}
           {name = "dap";}
-          {name = "cmdline";}
-          {name = "emoji";}
-          {name = "git";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";

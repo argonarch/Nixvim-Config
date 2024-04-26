@@ -4,6 +4,7 @@
     opts = {
       # Enable relative line numbers
       number = true;
+      conceallevel = 1;
       relativenumber = true;
 
       # Set tabs to 2 spaces
@@ -86,6 +87,7 @@
       # We don't need to see things like INSERT anymore
       showmode = false;
       spell = true;
+      spelllang = ["es" "en"];
     };
     clipboard = {
       register = "unnamedplus";

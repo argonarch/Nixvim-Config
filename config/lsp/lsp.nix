@@ -29,6 +29,9 @@
       biome.enable = true;
       typst-lsp.enable = true;
       gdscript.enable = true;
+      tsserver.enable = true;
+      omnisharp.enable = true;
+      sqls.enable = true;
     };
   };
 }

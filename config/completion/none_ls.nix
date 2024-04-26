@@ -14,6 +14,7 @@
     dart_format.enable = true;
     typstfmt.enable = true;
     biome.enable = true;
+    prettierd.enable = true;
   };
   plugins.none-ls.sources.diagnostics.yamllint.enable = true;
 }

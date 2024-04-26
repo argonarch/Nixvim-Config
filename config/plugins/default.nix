@@ -6,6 +6,8 @@
     ./telescope.nix
     ./toggleterm.nix
     ./barbar.nix
+    ./obsidian.nix
+    ./molten.nix
   ];
   plugins = {
     dap.enable = true;
