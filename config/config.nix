@@ -26,7 +26,7 @@
 
       # Enable text wrap
       wrap = true;
-
+      linebreak = true;
       # Better splitting
       splitbelow = true;
       splitright = true;
