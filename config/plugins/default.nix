@@ -23,8 +23,7 @@
     undotree.enable = true;
     markdown-preview.enable = true;
     lastplace.enable = true;
-    rest.enable = true;
-
+    copilot-vim.enable = true;
     notify = {
       enable = true;
       backgroundColour = "#000000";
