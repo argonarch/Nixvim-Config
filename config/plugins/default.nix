@@ -16,7 +16,6 @@
     illuminate.enable = true;
     project-nvim.enable = true;
     comment.enable = true;
-    barbar.enable = true;
     nvim-autopairs.enable = true;
     which-key.enable = true;
     indent-blankline.enable = true;
@@ -24,6 +23,7 @@
     markdown-preview.enable = true;
     lastplace.enable = true;
     copilot-vim.enable = true;
+    leap.enable = true;
     notify = {
       enable = true;
       backgroundColour = "#000000";

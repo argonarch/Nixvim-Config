@@ -125,15 +125,6 @@
 
     {
       mode = "n";
-      key = "<leader>o";
-      action = "<cmd>Lspsaga outline<CR>";
-      options = {
-        desc = "Outline";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>c";
       action = "LSP-Saga Actions";
     }

@@ -2,8 +2,10 @@
   plugins = {
     barbar = {
       enable = true;
-      maximumLength = 20;
-      maximumPadding = 1;
+      settings = {
+        maximumPadding = 1;
+        maximumLength = 20;
+      };
     };
   };
   keymaps = [

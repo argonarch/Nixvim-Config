@@ -85,6 +85,40 @@
       action = "<cmd>lua require('lsp_lines').toggle()<CR>";
       options.desc = "Toggle Lines";
     }
+
+    #obsidian
+    {
+      mode = "n";
+      key = "<leader>o";
+      action = "Obsidian Actions";
+    }
+    {
+      mode = "n";
+      key = "<leader>ob";
+      action = "<cmd>lua new_bpmn()<cr>";
+      options = {
+        silent = true;
+        desc = "New BPMN";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>oe";
+      action = "<cmd>lua new_excalidraw()<cr>";
+      options = {
+        silent = true;
+        desc = "New Excalidraw";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ot";
+      action = "<cmd>ObsidianToday<cr>";
+      options = {
+        silent = true;
+        desc = "Note Today";
+      };
+    }
     # Windows
     {
       mode = "n";

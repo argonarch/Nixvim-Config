@@ -25,7 +25,7 @@
       ccls.enable = true;
       bashls.enable = true;
       dartls.enable = true;
-      emmet_ls.enable = true;
+      emmet-ls.enable = true;
       biome.enable = true;
       typst-lsp.enable = true;
       gdscript.enable = true;
