@@ -23,7 +23,7 @@
       dockerls.enable = true;
       cssls.enable = true;
       ccls.enable = true;
-      bashls.enable = true;
+      #bashls.enable = true;
       dartls.enable = true;
       emmet-ls.enable = true;
       biome.enable = true;

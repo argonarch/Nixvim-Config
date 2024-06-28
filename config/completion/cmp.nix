@@ -16,6 +16,7 @@
           {name = "luasnip";}
           {name = "buffer";}
           {name = "dap";}
+          {name = "neorg";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";

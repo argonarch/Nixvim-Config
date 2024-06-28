@@ -38,12 +38,12 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>l";
+      key = "<leader>y";
       action = "Legendary Options";
     }
     {
       mode = "n";
-      key = "<leader>lc";
+      key = "<leader>yc";
       action = "<cmd>legendary commands<cr>";
       options = {
         silent = true;
@@ -52,7 +52,7 @@
     }
     {
       mode = "n";
-      key = "<leader>lk";
+      key = "<leader>yk";
       action = "<cmd>legendary keymaps<cr>";
       options = {
         silent = true;

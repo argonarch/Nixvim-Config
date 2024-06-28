@@ -8,6 +8,7 @@
     ./barbar.nix
     ./obsidian.nix
     ./molten.nix
+    ./neorg.nix
   ];
   plugins = {
     dap.enable = true;

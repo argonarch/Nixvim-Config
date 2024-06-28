@@ -7,6 +7,8 @@
       conceallevel = 1;
       relativenumber = true;
 
+      guifont = "JetBrainsMono Nerd Font:h12";
+
       # Set tabs to 2 spaces
       tabstop = 2;
       softtabstop = 2;
@@ -86,7 +88,7 @@
 
       # We don't need to see things like INSERT anymore
       showmode = false;
-      spell = true;
+      spell = false;
       spelllang = ["es" "en"];
     };
     clipboard = {
@@ -98,35 +100,6 @@
       		virtual_text = false,
       		virtual_lines = true,
       })
-    '';
-
-    extraConfigLua = ''
-      function new_bpmn()
-      -- Obtener la fecha y hora actual en formato "YYYYMMDD_HHMMSS"
-        local timestamp = os.date("%Y.%m.%d\ %H.%M.%S")
-
-        local source_file = vim.fn.expand("/hdd/kael/Notes/My Life/5_Templates/Draw.bpmn")
-        local target_file = vim.fn.expand("/hdd/kael/Notes/My Life/3_Recursos/BPMN") .. '/Draw ' .. timestamp .. '.bpmn'
-
-        vim.fn.system({'cp', source_file, target_file})
-        local startDraw = '```bpmn'
-        local name = 'url: [[Draw ' .. timestamp .. '.bpmn]]'
-        local endDraw = '```'
-        -- Pegar la direccion del archivo en la ubicación del cursor
-        vim.api.nvim_put({startDraw, name, endDraw}, 'l', true, true)
-      end
-      function new_excalidraw()
-      -- Obtener la fecha y hora actual en formato "YYYYMMDD_HHMMSS"
-        local timestamp = os.date("%Y.%m.%d\ %H.%M.%S")
-
-        local source_file = vim.fn.expand("/hdd/kael/Notes/My Life/5_Templates/Exca.md")
-        local target_file = vim.fn.expand("/hdd/kael/Notes/My Life/3_Recursos/Excalidraw") .. '/Exca ' .. timestamp .. '.md'
-
-        vim.fn.system({'cp', source_file, target_file})
-        local name = '![[Exca ' .. timestamp .. '.md]]'
-        -- Pegar la direccion del archivo en la ubicación del cursor
-        vim.api.nvim_put({name}, 'c', true, true)
-      end
     '';
   };
 }
