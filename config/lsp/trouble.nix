@@ -11,40 +11,41 @@
       key = "<leader>x";
       action = "+diagnostics/quickfix";
     }
+
     {
       mode = "n";
       key = "<leader>xx";
-      action = "<cmd>TroubleToggle<cr>";
+      action = "<cmd>Trouble diagnostics toggle<cr>";
       options = {
         silent = true;
-        desc = "Document Diagnostics (Trouble)";
+        desc = "Diagnostics (Trouble)";
       };
     }
     {
       mode = "n";
-      key = "<leader>xX";
-      action = "<cmd>TroubleToggle workspace_diagnostics<cr>";
+      key = "<leader>xb";
+      action = "<cmd>Trouble diagnostics toggle filter.buf=0<cr>";
       options = {
         silent = true;
-        desc = "Workspace Diagnostics (Trouble)";
+        desc = "Buffer Diagnostics (Trouble)";
       };
     }
     {
       mode = "n";
-      key = "<leader>xt";
-      action = "<cmd>TroubleToggle todo<cr>";
-      options = {
-        silent = true;
-        desc = "Todo (Trouble)";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>xQ";
-      action = "<cmd>TodoQuickFix<cr>";
+      key = "<leader>xq";
+      action = "<cmd>Trouble qflist toggle<cr>";
       options = {
         silent = true;
         desc = "Quickfix List (Trouble)";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>xl";
+      action = "<cmd>Trouble loclist toggle<cr>";
+      options = {
+        silent = true;
+        desc = "Location List (Trouble)";
       };
     }
   ];

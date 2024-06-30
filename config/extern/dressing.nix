@@ -3,10 +3,10 @@
     (
       pkgs.vimUtils.buildVimPlugin {
         pname = "dressing-nvim";
-        version = "2024-03-13";
+        version = "2024-06-19";
         src = pkgs.fetchurl {
-          url = "https://github.com/stevearc/dressing.nvim/archive/18e5beb3845f085b6a33c24112b37988f3f93c06.tar.gz";
-          sha256 = "11m7kp7giq7kfl44l7xcryv9gaxlb6npqb4mg8vmk4yqw6yk17im";
+          url = "https://github.com/stevearc/dressing.nvim/archive/6741f1062d3dc6e4755367a7e9b347b553623f04.tar.gz";
+          sha256 = "17z36996vsdjvwbq4w0di560yp7cha799hwv644yqk6q6q7mrc9r";
         };
       }
     )

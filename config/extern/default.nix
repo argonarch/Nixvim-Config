@@ -5,5 +5,6 @@
     ./legendary.nix
     ./dressing.nix
     ./overseer.nix
+    ./neorg.nix
   ];
 }

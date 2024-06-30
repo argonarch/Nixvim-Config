@@ -3,10 +3,10 @@
     (
       pkgs.vimUtils.buildVimPlugin {
         pname = "legendary-nvim";
-        version = "2024-04-12";
+        version = "2024-06-14";
         src = pkgs.fetchurl {
-          url = "https://github.com/mrjones2014/legendary.nvim/archive/a88744dcfc1e0ad0ed1e347778f036d7b6e4a0ca.tar.gz";
-          sha256 = "1f1xazhxmg0kr3kfd97xy8wsh3p7vx6cnsmnk5sr83xg9mwkajr6";
+          url = "https://github.com/mrjones2014/legendary.nvim/archive/89e0d00c5aed623c1f29cf2a963fd1737358e92a.tar.gz";
+          sha256 = "1ia6567q82x4l2sbiyx0b5cq07sz6cirgigzia1jix8ka4hqy0vw";
         };
       }
     )

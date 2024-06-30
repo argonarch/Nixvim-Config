@@ -2,7 +2,9 @@
   plugins.none-ls = {
     enable = true;
     enableLspFormat = true;
-    updateInInsert = false;
+    settings = {
+      updateInInsert = false;
+    };
   };
   plugins.none-ls.sources.formatting = {
     google_java_format.enable = true;

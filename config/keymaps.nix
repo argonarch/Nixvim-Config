@@ -91,7 +91,7 @@
     {
       mode = "n";
       key = "<leader>o";
-      action = "Obsidian Actions";
+      action = "Files Actions";
     }
     {
       mode = "n";
@@ -109,15 +109,6 @@
       options = {
         silent = true;
         desc = "New Excalidraw";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>ot";
-      action = "<cmd>ObsidianToday<cr>";
-      options = {
-        silent = true;
-        desc = "Note Today";
       };
     }
     # Windows
