@@ -50,7 +50,7 @@
 
     {
       mode = "n";
-      key = "r";
+      key = "t";
       action = "<cmd>red<CR>";
       options.desc = "Redo";
     }
