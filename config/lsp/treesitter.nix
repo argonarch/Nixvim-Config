@@ -1,11 +1,12 @@
 {
-  plugins.treesitter =
-    {
-      enable = true;
-      indent = true;
-      folding = true;
-      nixvimInjections = true;
+  plugins.treesitter = {
+    enable = true;
+    folding = true;
+    nixvimInjections = true;
+    settings = {
+      indent.enable = true;
     };
+  };
   plugins.treesitter-textobjects.enable = true;
   plugins.ts-context-commentstring.enable = true;
   plugins.treesitter-context.enable = true;

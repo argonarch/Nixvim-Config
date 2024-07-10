@@ -13,7 +13,6 @@
     nvim-colorizer.enable = true;
     surround.enable = true;
     illuminate.enable = true;
-    project-nvim.enable = true;
     comment.enable = true;
     nvim-autopairs.enable = true;
     which-key.enable = true;
