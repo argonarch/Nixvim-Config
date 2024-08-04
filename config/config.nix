@@ -4,10 +4,10 @@
     opts = {
       # Enable relative line numbers
       number = true;
-      conceallevel = 1;
+      conceallevel = 2;
       relativenumber = true;
-
-      guifont = "JetBrainsMono Nerd Font:h12";
+      autochdir = true;
+      guifont = "JetBrainsMono Nerd Font:h13";
 
       # Set tabs to 2 spaces
       tabstop = 2;
