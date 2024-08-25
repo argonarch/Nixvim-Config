@@ -20,7 +20,7 @@
 
     {
       mode = "n";
-      key = "<S-Tab>";
+      key = "<C-Tab>";
       action = "<cmd>BufferPrevious<cr>";
       options = {
         desc = "Previous buffer";

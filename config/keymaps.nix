@@ -18,7 +18,7 @@
     }
     {
       mode = "n";
-      key = "<leader>t";
+      key = "<leader>T";
       action = "<cmd>FormatToggle<CR>";
       options.desc = "Format Toogle";
     }
@@ -54,63 +54,31 @@
       action = "<cmd>red<CR>";
       options.desc = "Redo";
     }
-
-    # Tabs
-    {
-      mode = "n";
-      key = "<leader><tab>";
-      action = "Tabs";
-    }
-    {
-      mode = "n";
-      key = "<leader><tab><tab>";
-      action = "<cmd>tabnew<cr>";
-      options = {
-        silent = true;
-        desc = "New Tab";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader><tab>d";
-      action = "<cmd>tabclose<cr>";
-      options = {
-        silent = true;
-        desc = "Close tab";
-      };
-    }
     {
       mode = "n";
       key = "<leader>l";
       action = "<cmd>lua require('lsp_lines').toggle()<CR>";
       options.desc = "Toggle Lines";
     }
+    {
+      mode = "n";
+      key = "<leader>ta";
+      action = "<cmd>lua add_task_none()<cr>";
+      options = {
+        silent = true;
+        desc = "Add Task None";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>tA";
+      action = "<cmd>lua add_task_done()<cr>";
+      options = {
+        silent = true;
+        desc = "Add Task Complete";
+      };
+    }
 
-    #obsidian
-    {
-      mode = "n";
-      key = "<leader>o";
-      action = "Files Actions";
-    }
-    {
-      mode = "n";
-      key = "<leader>ob";
-      action = "<cmd>lua new_bpmn()<cr>";
-      options = {
-        silent = true;
-        desc = "New BPMN";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>oe";
-      action = "<cmd>lua new_excalidraw()<cr>";
-      options = {
-        silent = true;
-        desc = "New Excalidraw";
-      };
-    }
     # Windows
     {
       mode = "n";

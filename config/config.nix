@@ -7,7 +7,7 @@
       conceallevel = 2;
       relativenumber = true;
       autochdir = true;
-      guifont = "JetBrainsMono Nerd Font:h13";
+      guifont = "JetBrainsMono Nerd Font:h12";
 
       # Set tabs to 2 spaces
       tabstop = 2;
@@ -29,6 +29,8 @@
       # Enable text wrap
       wrap = true;
       linebreak = true;
+      breakindent = true;
+
       # Better splitting
       splitbelow = true;
       splitright = true;
@@ -100,6 +102,21 @@
       		virtual_text = false,
       		virtual_lines = true,
       })
+      vim.g.neovide_cursor_vfx_mode = "railgun";
+      vim.g.neovide_cursor_vfx_particle_density = 11.0
+      vim.g.neovide_cursor_vfx_particle_phase = 1.0
+    '';
+    extraConfigLua = ''
+      function add_task_none()
+        local task = '- ( ) ( ) |  | '
+        vim.api.nvim_put({task}, 'l', true, true)
+      end
+
+      function add_task_done()
+        local task = '- (x) ( ) |  | '
+        vim.api.nvim_put({task}, 'l', true, true)
+      end
+
     '';
   };
 }

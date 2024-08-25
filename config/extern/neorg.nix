@@ -7,10 +7,9 @@
     require("neorg").setup {
       load = {
         ["core.defaults"] = {},
-
         ["core.concealer"] = {
           config = {
-              icon_preset = "diamond"
+              icon_preset = "basic"
           },
         },
         ["core.completion"] = {
@@ -18,11 +17,7 @@
             engine = "nvim-cmp"
           }
         },
-
-        ["core.promo"] = {},
-        ["core.summary"] = {},
-        ["core.tangle"] = {},
-        ["core.ui.calendar"] = {},
+        ['core.integrations.nvim-cmp'] = {},
         ["core.journal"] = {
           config = {
             workspace = "home"

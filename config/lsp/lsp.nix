@@ -5,7 +5,7 @@
     lsp-format.enable = true;
     lspkind.enable = true;
     lsp.servers = {
-      astro.enable = true;
+      # astro.enable = true;
       rust-analyzer = {
         enable = true;
         installCargo = false;
