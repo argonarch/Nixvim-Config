@@ -5,8 +5,5 @@
     ./colorschema.nix
     ./lsp
     ./plugins
-    ./extern
-    ./completion
-    ./git
   ];
 }

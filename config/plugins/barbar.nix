@@ -11,22 +11,36 @@
   keymaps = [
     {
       mode = "n";
-      key = "<Tab>";
+      key = "<D-h>";
       action = "<cmd>BufferNext<cr>";
       options = {
         desc = "Next buffer";
       };
     }
-
     {
       mode = "n";
-      key = "<C-Tab>";
+      key = "<D-g>";
       action = "<cmd>BufferPrevious<cr>";
       options = {
         desc = "Previous buffer";
       };
     }
-
+    {
+      mode = "n";
+      key = "<C-PageDown>";
+      action = "<cmd>BufferNext<cr>";
+      options = {
+        desc = "Next buffer";
+      };
+    }
+    {
+      mode = "n";
+      key = "<C-PageUp>";
+      action = "<cmd>BufferPrevious<cr>";
+      options = {
+        desc = "Previous buffer";
+      };
+    }
     {
       mode = "n";
       key = "<leader>b";
@@ -40,7 +54,6 @@
         desc = "Delete buffer";
       };
     }
-
     {
       mode = "n";
       key = "<leader>br";
@@ -49,7 +62,6 @@
         desc = "Delete buffers to the right";
       };
     }
-
     {
       mode = "n";
       key = "<leader>bl";
@@ -58,7 +70,6 @@
         desc = "Delete buffers to the left";
       };
     }
-
     {
       mode = "n";
       key = "<leader>bo";
@@ -67,7 +78,6 @@
         desc = "Delete other buffers";
       };
     }
-
     {
       mode = "n";
       key = "<leader>bp";

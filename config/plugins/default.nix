@@ -1,17 +1,17 @@
-{
+{pkgs, ...}: {
   imports = [
-    ./alpha.nix
-    ./lualine.nix
     ./neotree.nix
+    ./cmp.nix
+    ./git.nix
     ./telescope.nix
-    ./toggleterm.nix
+    ./neorg.nix
+    ./mini.nix
     ./barbar.nix
-    ./molten.nix
   ];
   plugins = {
     dap.enable = true;
-    nvim-colorizer.enable = true;
-    surround.enable = true;
+    lint.enable = true;
+    vim-surround.enable = true;
     illuminate.enable = true;
     comment.enable = true;
     nvim-autopairs.enable = true;
@@ -20,29 +20,33 @@
     undotree.enable = true;
     markdown-preview.enable = true;
     lastplace.enable = true;
-    copilot-vim.enable = true;
-    leap.enable = true;
-    notify = {
+    oil.enable = true;
+    toggleterm = {
       enable = true;
-      backgroundColour = "#000000";
+      settings = {
+        direction = "float";
+        autochdir = true;
+        shell = "fish";
+        open_mapping = "[[<c-n>]]";
+      };
     };
-
-    mini = {
+    copilot-lua = {
       enable = true;
-      modules = {align = {};};
+      suggestion.enabled = false;
+      panel.enabled = false;
+    };
+    lualine = {
+      enable = true;
+      settings = {
+        options = {
+          globalstatus = true;
+          ignore_focus = [
+            "neo-tree"
+            "nvim-tree"
+            "mini-files"
+          ];
+        };
+      };
     };
   };
-  extraConfigLuaPost = ''
-    local align = require('mini.align')
-    align.setup({
-    options = {
-      split_pattern = ';',
-      justify_side = 'left',
-      merge_delimiter = ' ',
-    },
-    steps = {
-      pre_justify = { align.gen_step.trim('both', 'remove') }
-    },
-    })
-  '';
 }

@@ -1,7 +1,7 @@
 {
   globals = {
     mapleader = " ";
-    maplocalleader = "\\";
+    maplocalleader = ";";
   };
   keymaps = [
     {
@@ -12,13 +12,25 @@
     }
     {
       mode = "n";
-      key = "<leader>k";
+      key = "<leader>n";
+      action = "<cmd>nohlsearch<CR>";
+      options.desc = "Remove Highlight";
+    }
+    {
+      mode = "n";
+      key = "<leader>n";
       action = "<cmd>w<CR>";
       options.desc = "Save NeoVim";
     }
     {
       mode = "n";
-      key = "<leader>T";
+      key = "t";
+      action = "<cmd>red<CR>";
+      options.desc = "Redo";
+    }
+    {
+      mode = "n";
+      key = "<leader>t";
       action = "<cmd>FormatToggle<CR>";
       options.desc = "Format Toogle";
     }
@@ -40,45 +52,12 @@
       action = "<cmd>UndotreeToggle<CR>";
       options.desc = "Toggle Undotree";
     }
-
     {
       mode = "n";
       key = "<leader>b";
       action = "<cmd>Bdelete<CR>";
       options.desc = "Close Buffer";
     }
-
-    {
-      mode = "n";
-      key = "t";
-      action = "<cmd>red<CR>";
-      options.desc = "Redo";
-    }
-    {
-      mode = "n";
-      key = "<leader>l";
-      action = "<cmd>lua require('lsp_lines').toggle()<CR>";
-      options.desc = "Toggle Lines";
-    }
-    {
-      mode = "n";
-      key = "<leader>ta";
-      action = "<cmd>lua add_task_none()<cr>";
-      options = {
-        silent = true;
-        desc = "Add Task None";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>tA";
-      action = "<cmd>lua add_task_done()<cr>";
-      options = {
-        silent = true;
-        desc = "Add Task Complete";
-      };
-    }
-
     # Windows
     {
       mode = "n";
@@ -94,7 +73,6 @@
         desc = "Other window";
       };
     }
-
     {
       mode = "n";
       key = "<leader>wd";
@@ -104,27 +82,24 @@
         desc = "Delete window";
       };
     }
-
     {
       mode = "n";
-      key = "<leader>w-";
+      key = "<leader>wn";
       action = "<C-W>s";
       options = {
         silent = true;
         desc = "Split window below";
       };
     }
-
     {
       mode = "n";
-      key = "<leader>w|";
+      key = "<leader>wt";
       action = "<C-W>v";
       options = {
         silent = true;
         desc = "Split window right";
       };
     }
-
     {
       mode = "n";
       key = "<C-Left>";
@@ -134,7 +109,6 @@
         desc = "Move to window left";
       };
     }
-
     {
       mode = "n";
       key = "<C-Right>";
@@ -144,7 +118,6 @@
         desc = "Move to window right";
       };
     }
-
     {
       mode = "n";
       key = "<C-Up>";
@@ -154,7 +127,6 @@
         desc = "Move to window over";
       };
     }
-
     {
       mode = "n";
       key = "<C-Down>";

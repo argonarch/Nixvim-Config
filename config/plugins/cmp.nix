@@ -5,6 +5,10 @@
     cmp-dap.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp_luasnip.enable = true;
+    cmp-fish.enable = true;
+    cmp-nvim-lsp-signature-help.enable = true;
+    copilot-cmp.enable = true;
+    cmp-vsnip.enable = true;
 
     cmp = {
       enable = true;
@@ -17,6 +21,10 @@
           {name = "buffer";}
           {name = "dap";}
           {name = "neorg";}
+          {name = "fish";}
+          {name = "nvim_lsp_signature_help";}
+          {name = "copilot";}
+          {name = "vsnip";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
@@ -24,8 +32,8 @@
           "<C-e>" = "cmp.mapping.close()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<Up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-          "<Down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+          "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
           "<S-CR>" = "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
         };
         snippet = {
