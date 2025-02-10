@@ -41,7 +41,7 @@
       grepformat = "%f:%l:%c:%m";
 
       # Decrease updatetime
-      updatetime = 50; # faster completion (4000ms default)
+      updatetime = 100; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
       completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
@@ -86,33 +86,15 @@
 
       # We don't need to see things like INSERT anymore
       showmode = false;
-      spell = false;
-      spelllang = ["es" "en"];
     };
     clipboard = {
       register = "unnamedplus";
       providers.wl-copy.enable = true;
     };
     extraConfigLuaPre = ''
-      vim.diagnostic.config({
-      		virtual_text = false,
-      		virtual_lines = true,
-      })
-      vim.g.neovide_cursor_vfx_mode = "railgun";
+      vim.g.neovide_cursor_vfx_mode = "railgun"
       vim.g.neovide_cursor_vfx_particle_density = 11.0
       vim.g.neovide_cursor_vfx_particle_phase = 1.0
-    '';
-    extraConfigLua = ''
-      function add_task_none()
-        local task = '- ( ) ( ) |  | '
-        vim.api.nvim_put({task}, 'l', true, true)
-      end
-
-      function add_task_done()
-        local task = '- (x) ( ) |  | '
-        vim.api.nvim_put({task}, 'l', true, true)
-      end
-
     '';
   };
 }

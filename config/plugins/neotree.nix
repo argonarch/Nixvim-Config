@@ -5,8 +5,8 @@
     enableGitStatus = true;
     enableModifiedMarkers = true;
     enableRefreshOnWrite = true;
-    closeIfLastWindow = true;
     hideRootNode = true;
+    closeIfLastWindow = true;
     popupBorderStyle = "rounded"; # Type: null or one of “NC”, “double”, “none”, “rounded”, “shadow”, “single”, “solid” or raw lua code
     buffers = {
       bindToCwd = false;
@@ -25,8 +25,16 @@
     filesystem = {
       hijackNetrwBehavior = "open_default";
       filteredItems = {
-        hideDotfiles = false;
-        hideGitignored = false;
+        hideDotfiles = true;
+        alwaysShow = [
+          ".gitignore"
+          ".env"
+          ".env-example"
+          ".ccls"
+          ".justfile"
+          ".envrc"
+          ".pio"
+        ];
         showHiddenCount = false;
       };
     };

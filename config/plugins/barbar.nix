@@ -11,35 +11,108 @@
   keymaps = [
     {
       mode = "n";
-      key = "<D-h>";
-      action = "<cmd>BufferNext<cr>";
-      options = {
-        desc = "Next buffer";
-      };
-    }
-    {
-      mode = "n";
       key = "<D-g>";
       action = "<cmd>BufferPrevious<cr>";
-      options = {
-        desc = "Previous buffer";
-      };
     }
     {
       mode = "n";
-      key = "<C-PageDown>";
+      key = "<D-h>";
       action = "<cmd>BufferNext<cr>";
-      options = {
-        desc = "Next buffer";
-      };
     }
     {
       mode = "n";
-      key = "<C-PageUp>";
-      action = "<cmd>BufferPrevious<cr>";
-      options = {
-        desc = "Previous buffer";
-      };
+      key = "<A-<>";
+      action = "<cmd>BufferMovePrevious<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A->>";
+      action = "<cmd>BufferMoveNext<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-1>";
+      action = "<cmd>BufferGoto 1<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-2>";
+      action = "<cmd>BufferGoto 2<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-3>";
+      action = "<cmd>BufferGoto 3<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-4>";
+      action = "<cmd>BufferGoto 4<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-5>";
+      action = "<cmd>BufferGoto 5<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-6>";
+      action = "<cmd>BufferGoto 6<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-7>";
+      action = "<cmd>BufferGoto 7<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-8>";
+      action = "<cmd>BufferGoto 8<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-9>";
+      action = "<cmd>BufferGoto 9<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-0>";
+      action = "<cmd>BufferLast<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-'>";
+      action = "<cmd>BufferPin<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-t>";
+      action = "<cmd>BufferClose<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-h>";
+      action = "<cmd>BufferCloseBuffersRight<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-c>";
+      action = "<cmd>BufferCloseBuffersLeft<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-n>";
+      action = "<cmd>BufferCloseAllButCurrent<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-s>";
+      action = "<cmd>BufferCloseAllButPinned<cr>";
+    }
+    {
+      mode = "n";
+      key = "<A-r>";
+      action = "<cmd>BufferRestore<cr>";
     }
     {
       mode = "n";
@@ -48,42 +121,34 @@
     }
     {
       mode = "n";
-      key = "<leader>bd";
-      action = "<cmd>BufferClose<cr>";
+      key = "<leader>bb";
+      action = "<cmd>BufferOrderByBufferNumber<cr>";
       options = {
-        desc = "Delete buffer";
+        desc = "Order By Buffer Number";
       };
     }
     {
       mode = "n";
-      key = "<leader>br";
-      action = "<cmd>BufferCloseBuffersRight<cr>";
+      key = "<leader>bn";
+      action = "<cmd>BufferOrderByName<cr>";
       options = {
-        desc = "Delete buffers to the right";
+        desc = "Order By Name";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>bd";
+      action = "<cmd>BufferOrderByDirectory<cr>";
+      options = {
+        desc = "Order By Directory";
       };
     }
     {
       mode = "n";
       key = "<leader>bl";
-      action = "<cmd>BufferCloseBuffersLeft<cr>";
+      action = "<cmd>BufferOrderByLanguage<cr>";
       options = {
-        desc = "Delete buffers to the left";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>bo";
-      action = "<cmd>BufferCloseAllButCurrent<cr>";
-      options = {
-        desc = "Delete other buffers";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>bp";
-      action = "<cmd>BufferCloseAllButPinned<cr>";
-      options = {
-        desc = "Delete non-pinned buffers";
+        desc = "Order By Language";
       };
     }
   ];

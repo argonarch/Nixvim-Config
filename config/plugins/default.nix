@@ -1,26 +1,33 @@
-{pkgs, ...}: {
+{
   imports = [
     ./neotree.nix
-    ./cmp.nix
     ./git.nix
     ./telescope.nix
     ./neorg.nix
-    ./mini.nix
     ./barbar.nix
   ];
   plugins = {
     dap.enable = true;
-    lint.enable = true;
-    vim-surround.enable = true;
     illuminate.enable = true;
     comment.enable = true;
     nvim-autopairs.enable = true;
     which-key.enable = true;
     indent-blankline.enable = true;
-    undotree.enable = true;
     markdown-preview.enable = true;
+    visual-multi.enable = true;
+    auto-save = {
+      enable = true;
+      settings.noautocmd = true;
+    };
     lastplace.enable = true;
-    oil.enable = true;
+    # image.enable = true;
+    oil = {
+      enable = true;
+      settings = {
+        view_options.show_hidden = true;
+        default_file_explorer = false;
+      };
+    };
     toggleterm = {
       enable = true;
       settings = {
@@ -29,11 +36,6 @@
         shell = "fish";
         open_mapping = "[[<c-n>]]";
       };
-    };
-    copilot-lua = {
-      enable = true;
-      suggestion.enabled = false;
-      panel.enabled = false;
     };
     lualine = {
       enable = true;
@@ -44,6 +46,7 @@
             "neo-tree"
             "nvim-tree"
             "mini-files"
+            "chadtree"
           ];
         };
       };

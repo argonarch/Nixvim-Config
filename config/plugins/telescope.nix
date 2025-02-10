@@ -9,7 +9,6 @@
       ];
     };
   };
-  plugins.telescope.extensions.fzf-native.enable = true;
   keymaps = [
     {
       mode = "n";

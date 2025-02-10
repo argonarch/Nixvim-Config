@@ -1,9 +1,9 @@
 {
   imports = [
     ./trouble.nix
-    ./fidget.nix
     ./lsp.nix
     ./none_ls.nix
+    ./cmp.nix
   ];
 
   plugins = {
@@ -15,7 +15,7 @@
         store_selection_keys = "<Tab>";
       };
     };
-    lsp-lines.enable = true;
+    fidget.enable = true;
     lsp-format.enable = true;
   };
 }

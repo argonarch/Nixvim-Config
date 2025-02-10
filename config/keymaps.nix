@@ -6,21 +6,27 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>q";
-      action = "<cmd>qa<CR>";
-      options.desc = "Quit NeoVim";
-    }
-    {
-      mode = "n";
       key = "<leader>n";
       action = "<cmd>nohlsearch<CR>";
       options.desc = "Remove Highlight";
     }
     {
       mode = "n";
-      key = "<leader>n";
-      action = "<cmd>w<CR>";
-      options.desc = "Save NeoVim";
+      key = "l";
+      action = "<cmd>Format<CR>";
+      options.desc = "Format NeoVim";
+    }
+    {
+      mode = "n";
+      key = "j";
+      action = "<cmd>q<CR>";
+      options.desc = "Quit NeoVim";
+    }
+    {
+      mode = "n";
+      key = "<S-j>";
+      action = "<cmd>qa<CR>";
+      options.desc = "Quit All NeoVim";
     }
     {
       mode = "n";
@@ -36,7 +42,7 @@
     }
     {
       mode = "n";
-      key = "<leader>e";
+      key = "h";
       action = "<cmd>Neotree toggle<CR>";
       options.desc = "Toggle Neo Tree";
     }
@@ -46,54 +52,10 @@
       action = "<cmd>LspRestart<CR>";
       options.desc = "Lsp Restart";
     }
-    {
-      mode = "n";
-      key = "<leader>u";
-      action = "<cmd>UndotreeToggle<CR>";
-      options.desc = "Toggle Undotree";
-    }
-    {
-      mode = "n";
-      key = "<leader>b";
-      action = "<cmd>Bdelete<CR>";
-      options.desc = "Close Buffer";
-    }
     # Windows
     {
       mode = "n";
-      key = "<leader>w";
-      action = "Window Actions";
-    }
-    {
-      mode = "n";
-      key = "<leader>ww";
-      action = "<C-W>p";
-      options = {
-        silent = true;
-        desc = "Other window";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>wd";
-      action = "<C-W>c";
-      options = {
-        silent = true;
-        desc = "Delete window";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>wn";
-      action = "<C-W>s";
-      options = {
-        silent = true;
-        desc = "Split window below";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>wt";
+      key = "k";
       action = "<C-W>v";
       options = {
         silent = true;

@@ -1,7 +1,9 @@
 {
   colorschemes = {
-    catppuccin.enable = true;
-    catppuccin.settings.flavour = "mocha";
+    catppuccin = {
+      enable = true;
+      settings.flavour = "mocha";
+    };
   };
   plugins = {
     treesitter = {
@@ -18,7 +20,7 @@
     web-devicons.enable = true;
     notify = {
       enable = true;
-      backgroundColour = "#000000";
+      settings = {backgroundColour = "#000000";};
     };
   };
 }
