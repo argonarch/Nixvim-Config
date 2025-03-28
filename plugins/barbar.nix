@@ -21,6 +21,16 @@
     }
     {
       mode = "n";
+      key = "<C-PageUp>";
+      action = "<cmd>BufferPrevious<cr>";
+    }
+    {
+      mode = "n";
+      key = "<C-PageDown>";
+      action = "<cmd>BufferNext<cr>";
+    }
+    {
+      mode = "n";
       key = "<A-<>";
       action = "<cmd>BufferMovePrevious<cr>";
     }

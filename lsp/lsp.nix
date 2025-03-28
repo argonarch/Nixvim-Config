@@ -37,11 +37,11 @@
       fish_lsp.enable = true;
       # Toml
       taplo.enable = true;
-      # JavaScript/TypeScript
-      biome = {
-        enable = true;
-        filetypes = ["javascript" "javascriptreact" "typescript" "typescript.tsx" "typescriptreact" "graphql"];
-      };
+      # # JavaScript/TypeScript
+      # biome = {
+      #   enable = true;
+      #   filetypes = ["javascript" "javascriptreact" "typescript" "typescript.tsx" "typescriptreact" "graphql"];
+      # };
       # Json
       jsonls = {
         enable = true;

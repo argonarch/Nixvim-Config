@@ -5,7 +5,7 @@
     cmp-dap.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp_luasnip.enable = true;
-    # cmp-vsnip.enable = true;
+    cmp-vsnip.enable = true;
 
     cmp = {
       enable = true;
@@ -18,7 +18,7 @@
           {name = "buffer";}
           {name = "dap";}
           {name = "neorg";}
-          # {name = "vsnip";}
+          {name = "vsnip";}
         ];
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";

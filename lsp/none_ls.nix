@@ -47,7 +47,7 @@
       };
       completion = {
         luasnip.enable = true;
-        # vsnip.enable = true;
+        vsnip.enable = true;
       };
     };
   };
